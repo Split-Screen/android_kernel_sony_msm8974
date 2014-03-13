@@ -554,7 +554,6 @@ static int f2fs_show_options(struct seq_file *seq, struct dentry *root)
 		seq_puts(seq, ",flush_merge");
 	if (test_opt(sbi, NOBARRIER))
 		seq_puts(seq, ",nobarrier");
-	seq_printf(seq, ",active_logs=%u", sbi->active_logs);
 
 	return 0;
 }
